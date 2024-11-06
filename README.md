@@ -7,7 +7,8 @@ AlmaLinux 8、9、ubuntu 2024.04 LTSで動作を確認しています。
 
 ## Libreofficeマクロのドキュメント
 
-https://wiki.documentfoundation.org/Macros/Python_Guide/My_first_macro/ja
+- https://wiki.documentfoundation.org/Macros/Python_Guide/ja
+- https://wiki.documentfoundation.org/Macros/Python_Guide/My_first_macro/ja
 
 ## LibreOffice Calcインストール
 
