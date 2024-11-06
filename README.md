@@ -13,6 +13,12 @@ AlmaLinux 8、9、ubuntu 2024.04 LTSで動作を確認しています。
 # dnf install libreoffice-calc
 ```
 
+### Ubuntu 2024.04 LTS
+
+```
+apt install libreoffice-calc libreoffice-script-provider-python
+```
+
 ## LibreOffice Calcの起動
 
 デスクトップ環境のメニューバーからLibreOffice Calcを起動することも可能だが、
