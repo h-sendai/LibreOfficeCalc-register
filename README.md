@@ -20,6 +20,7 @@ AlmaLinux 8および9でテストしましたが、
 
 - https://wiki.documentfoundation.org/Macros/Python_Guide/ja
 - https://wiki.documentfoundation.org/Macros/Python_Guide/My_first_macro/ja
+- https://tutolibro.tech/2019/03/18/libreoffice-calc-python-programming-part-0-get-started/
 
 ## LibreOffice Calcインストール
 
