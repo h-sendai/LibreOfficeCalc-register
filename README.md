@@ -88,5 +88,68 @@ Tools →Macros → Run Macro → MyMacrosの▼をクリックして my_first_m
 
 ## シート上にボタンを設置して、pythonプログラムをバインドする
 
+pythonマクロを書いて動作を確認するのに上のようにメニューをたどるのは
+大変だし、最終的にはボタンを押せばなにか動作するというふうにしたいので
+まずボタンを追加してみます。
 
+メニューバーView -> Toolbars -> Form ControlsとたどってForm Controlsを
+表示させます。自動でデザインモードになり、ボタンの追加などが可能に
+なります。バルーンヘルプがでるのでそれを参考にして
+Form Controls内にあるボタンアイコンをクリックし、シート上の適当な場所に
+ボタンを追加します。ボタン周辺に小正方形がならんでいる状態ならボタンの
+位置を移動させることができます。Form Controlsからデザインモードアイコン
+(三角定規と鉛筆がかかれたアイコンのもの。バルーンヘルプがでますので
+それをみてもいいです)をクリックしてデザインモードを抜けます。
+ボタンが押せるかどうか確認してみます。
 
+ボタンは押せるようになりましたが、押したときの動作を指定していないので
+指定してみます。ここでは上で使った
+my_first_macro_calc.pyが走るようにしてみます。
+ふたたび
+メニューバーView -> Toolbars -> Form Controlsとたどって
+デザインモードをクリックしてデザインモードに移行してください
+(Form Controls内の各アイコンがグレイアウトしていない状態だと
+デザインモードです)。
+
+ボタン上で右クリックしてControl Propertiesを選択します。
+GeneralタブのLabelでボタン上に表示される文字列を指定します。
+EventsタブのExecute actionの"..."をクリックしてpythonマクロを
+割り当てます。Excute actionが反転表示されている状態で
+右側Macroを選択し、Libraryからmy_first_macro_calcを選択すると
+Macro Nameにmy_first_macro_calcが入ります。
+最初のmy_first_macro_calcはファイル名で、Macro Nameは
+そのファイル内にかかれている関数名です。ここで指定した関数名の
+関数がボタンを押すことで実行されます。
+OKを2回おして、Properties: Push ButtonボックスのXを押して
+Form Controlsのデザインモードボタンをクリックし、デザインモードを
+抜けます。
+Form ControlsボックスはXを押して閉じます。
+
+これでボタンを押すとA1セルに「PythonからCalcでHello World」という
+文字列が入力されるようになりました。
+
+一度ファイルとして保存して、もう一度読み込ませてみると
+
+> This document contains macros.
+>
+> Macros may contain viruses. Excution of macros is disabled due to
+> the current macro security setting in Tools - Options - LibreOffice - Security.
+>
+> Therefore, some functionality may not be available.
+
+とでるのでメニューバーから
+Tools -> Options -> LibreOffice -> Security -> Macro Security
+でMediumを選択しておきます。
+これでもファイルを開いたときに
+
+> The document contains document macros.
+>
+> Macros may contain viruses.  Disabling macros for a document is always safe.  If
+> you disable macros you may lose functionality provided by the document macros
+>
+> [ Help ] [ Disable Macros ] [ Enable Macros ]
+
+とでます。Enable Macrosを選択するとボタンが表示され押せるように
+なります。
+警告がまったく出ないようにするにはMediumではなくてLow (not recommended)を
+選択すればよいと思いますので各自どれを選択するか決めて設定してください。
