@@ -3,7 +3,13 @@
 LibreOfficeCalcを使ってレジスタを設定するためのデータを
 生成するプログラム。
 
-AlmaLinux 8、9、ubuntu 2024.04 LTSで動作を確認しています。
+AlmaLinux 8および9で確認しています。
+
+AlmaLinux 8配布物にふくまれているLibreOffice Calcでは
+View -> Toolbars -> Form Controlで下向き三角とだどったあと
+Customize Toolbar...を選択するとLibreOffice Calcがクラッシュします。
+
+選択可能でなるならAlmaLinux 9を選択するのがよいと思います。
 
 ## Libreofficeマクロのドキュメント
 
