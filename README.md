@@ -188,7 +188,30 @@ Calcメニューバー Tools -> Extension ManagerでAPSOを選択し、
 インストールが終了するとメニューバーTools -> Macrosに
 Organize Python Scripts が追加されます。
 
-## ボタンevents - execute actionの値
+pythonスクリプトファイルをCalcファイルに埋め込むには
+Tools -> Macros -> Organize Python Script
+でダイアログを開きます。
+``$HOME/.config/libreoffice/4/Scripts/python/``ディレクトリに
+おいたファイルはMyMacroの下にありますのでファイルを選択して
+メニューボタンからEmbed in documentを選ぶとCalcドキュメントに
+埋め込まれます。
+
+埋め込まれたPythonスクリプトファイルは
+Tools -> Macros -> Organize Python Script
+で一番下のファイル名(ファイルを保存していない場合はUntitled)の下にあります。
+
+ボタンから``$HOME/.config/libreoffice/4/Scripts/python/``ディレクトリにある
+スクリプトを走らせてるように設定した場合は、埋め込んだスクリプトファイル
+を走らせるように変更しておきます。
+変更方法は
+Tools -> Forms -> Design Modeでデザインモードに移行して、
+ボタン右クリックで
+EventsタブのExecute actionの"..."をクリック、
+出てくるダイアログでファイル名をクリックして出てくるファイルを
+選択する、です。
+
+(参考)
+ボタンevents - execute actionの値
 
 ``$HOME/.config/libreoffice/4/user/Scripts/python/hello.py``中の
 ``hello_world()``を指定した場合は``hello.py$hello_world (user, Python)``
