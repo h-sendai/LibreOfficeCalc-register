@@ -219,4 +219,8 @@ EventsタブのExecute actionの"..."をクリック、
 
 Calcファイル埋め込みにした場合は
 ``hello.py$hello_world (document, Python)``となっている。
+(参考終わり)
 
+ファイルが埋め込まれたかどうかは端末から``unzip -l filename.ods``
+するとわかります。埋め込まれていた場合にはNameの欄に
+``Scripts/python/`` + ファイル名 があります。
