@@ -158,3 +158,17 @@ Tools -> Options -> LibreOffice -> Security -> Macro Security
 なります。
 警告がまったく出ないようにするにはMediumではなくてLow (not recommended)を
 選択すればよいと思いますので各自どれを選択するか決めて設定してください。
+
+これであとは適宜
+``$HOME/.config/libreoffice/4/user/Scripts/python/my_first_macro_calc.py``
+を編集して設置したボタンを押せば動作確認ができるようになりました。
+
+## pythonプログラムをCalcファイルに同梱する
+
+このままでもよいのですが、
+LibreOffice Calcファイルに作ったpythonプログラムを同梱しておくと
+便利な場合があります（人に渡す場合など）。
+
+pythonプログラムを同梱する方法として、手動で作業する方法と
+GUIを使う方法のふたとおりの方法があります。
+ここではGUIを使う方法を解説します。
