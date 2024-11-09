@@ -185,6 +185,9 @@ APSOで使用するエディタを指定する場合は
 Calcメニューバー Tools -> Extension ManagerでAPSOを選択し、
 [Options]ボタン、Editorの欄で指定できます。
 
+インストールが終了するとメニューバーTools -> Macrosに
+Organize Python Scripts が追加されます。
+
 ## ボタンevents - execute actionの値
 
 ``$HOME/.config/libreoffice/4/user/Scripts/python/hello.py``中の
