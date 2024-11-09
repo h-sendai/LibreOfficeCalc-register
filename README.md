@@ -172,3 +172,13 @@ LibreOffice Calcファイルに作ったpythonプログラムを同梱してお�
 pythonプログラムを同梱する方法として、手動で作業する方法と
 GUIを使う方法のふたとおりの方法があります。
 ここではGUIを使う方法を解説します。
+
+## ボタンevents - execute actionの値
+
+``$HOME/.config/libreoffice/4/user/Scripts/python/hello.py``中の
+``hello_world()``を指定した場合は``hello.py$hello_world (user, Python)``
+となっている。
+
+Calcファイル埋め込みにした場合は
+``hello.py$hello_world (document, Python)``となっている。
+
