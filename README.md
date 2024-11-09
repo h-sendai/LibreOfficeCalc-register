@@ -173,6 +173,18 @@ pythonプログラムを同梱する方法として、手動で作業する方�
 GUIを使う方法のふたとおりの方法があります。
 ここではGUIを使う方法を解説します。
 
+LibreOffice Calcに拡張機能APSO (Alternative Script Organizer for Python)
+をインストールします。
+
+1. https://extensions.libreoffice.org/en/extensions/show/apso-alternative-script-organizer-for-pythonのDownload latestボタンを押すとapso.oxtというファイル名でダウンロードされます。
+2. Calcメニューバー Tools -> Extension Manager -> [Add] ボタン
+3. apso.oxtファイルを指定
+
+でインストールできます。
+APSOで使用するエディタを指定する場合は
+Calcメニューバー Tools -> Extension ManagerでAPSOを選択し、
+[Options]ボタン、Editorの欄で指定できます。
+
 ## ボタンevents - execute actionの値
 
 ``$HOME/.config/libreoffice/4/user/Scripts/python/hello.py``中の
