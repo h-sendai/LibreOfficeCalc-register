@@ -10,11 +10,12 @@ AlmaLinux 8および9でテストしましたが、
   View -> Toolbars -> Form Controlで下向き三角とだどったあと
   Customize Toolbar...を選択するとLibreOffice Calcがクラッシュします。
 - AlmaLinux 8配布物にふくまれているLIbreOffice Calcでは
-  セットすると便利な外部モジュールAPSOをインストールすることが
+  セットすると便利な外部モジュールAPSOの最新版をインストールすることが
   できない(APSOインストーラが``import importlib.metadata``しているが
   importlib.metadataモジュールはpython 3.8からpython標準ライブラリに
   追加されたものであり、AlmaLinux 8の/usr/bin/python3は3.6なので
-  importlib.metadataのimportに失敗しインストールできない)。
+  importlib.metadataのimportに失敗しインストールできない)
+  (APSOの古いバージョンのものならインストール可能かもしれない)。
 
 ## Libreofficeマクロのドキュメント
 
