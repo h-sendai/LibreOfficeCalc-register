@@ -22,6 +22,11 @@ AlmaLinux 8および9でテストしましたが、
 - https://wiki.documentfoundation.org/Macros/Python_Guide/My_first_macro/ja
 - https://tutolibro.tech/2019/03/18/libreoffice-calc-python-programming-part-0-get-started/
 
+各種関数など
+
+- https://openoffice3.web.fc2.com/Python_Macro_Calc.html
+  https://openoffice3.web.fc2.com/Python_Macro_Calc_No2.html
+
 ## LibreOffice Calcインストール
 
 ### AlmaLinux 8, 9
