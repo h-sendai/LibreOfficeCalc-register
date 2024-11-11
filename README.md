@@ -80,9 +80,17 @@ mkdir -p Scripts/python
 ## Hello, world
 
 Programming Language C (K & R)出版以来、最初に書くプログラムはHello worldです。
-``$HOME/.config/libreoffice/4/user/Scripts/python/``ディレクトリに
-[my_first_macro_calc.py](my_first_macro_calc.py)
-にあるプログラムをコピーします。
+A1セルに文字列を挿入するマクロを動かしてみます。
+
+### 手順
+
+
+1. ``$HOME/.config/libreoffice/4/user/Scripts/python/``ディレクトリに
+[hello.py](hello.py)にあるプログラムをコピーします。
+```
+wget https://github.com/h-sendai/LibreOfficeCalc-register/blob/main/hello.py
+```
+
 (
 https://wiki.documentfoundation.org/Macros/Python_Guide/My_first_macro/ja
 からもってきて、下記ボタンからも起動できるように
@@ -90,13 +98,26 @@ https://wiki.documentfoundation.org/Macros/Python_Guide/My_first_macro/ja
 ``*args``は使わないですがないとボタンを押したときにエラーになります
 )。
 
-Calcを起動して
-
-Tools →Macros → Run Macro → MyMacrosの▼をクリックして my_first_macro_calc
-を選択→ Macro Nameでmy_first_macro_calcが自動選択されているのを確認
+2. Calcを起動して
+Tools →
+Macros →
+Run Macro →
+Macro Selectorが起動する →
+MyMacrosの▼ →
+helloを選択→
+Macro Name欄でhello_wordが選択されているのを確認
 → Runボタン
-
 でA1セルに「PythonからCalcでHello world」と入ります。
+
+### 追加説明
+
+``$HOME/.config/libreoffice/4/user/Scripts/python/``ディレクトリにある
+ファイルがMacro SelectorのLibraryのMy Macrosの下に表示されています。
+ここにおくPythonスクリプトファイルには拡張子``.py``を付けておきます
+(つけないとMacro Selectorで表示されません)。実行権限はつけてもつけなくても
+よいです。Macro NameにはPythonスクリプト内の関数名が表示されています。
+hello.pyにはhello_world()という関数しかなかったのでひとつしか
+表示されていません。
 
 ## シート上にボタンを設置して、pythonプログラムをバインドする
 
