@@ -91,12 +91,6 @@ A1セルに文字列を挿入するマクロを動かしてみます。
 wget https://github.com/h-sendai/LibreOfficeCalc-register/blob/main/hello.py
 ```
 
-(
-https://wiki.documentfoundation.org/Macros/Python_Guide/My_first_macro/ja
-からもってきて、下記ボタンからも起動できるように
-``def my_first_macro_calc()``に引数``*args``を追加したものです。このプログラムでは
-``*args``は使わないですがないとボタンを押したときにエラーになります
-)。
 
 2. Calcを起動して
 Tools →
@@ -118,6 +112,15 @@ Macro Name欄でhello_wordが選択されているのを確認
 よいです。Macro NameにはPythonスクリプト内の関数名が表示されています。
 hello.pyにはhello_world()という関数しかなかったのでひとつしか
 表示されていません。
+
+hello.pyは
+https://wiki.documentfoundation.org/Macros/Python_Guide/My_first_macro/ja
+からもってきて、
+
+- ファイル名、関数名を変更
+- 下記ボタンからも起動できるように
+``def hello_world()``に引数``*args``を追加したものです。このプログラムでは
+``*args``は使わないですがないとボタンを押したときにエラーになります
 
 ## シート上にボタンを設置して、pythonプログラムをバインドする
 
