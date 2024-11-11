@@ -128,42 +128,49 @@ pythonマクロを書いて動作を確認するのに上のようにメニュ�
 大変だし、最終的にはボタンを押せばなにか動作するというふうにしたいので
 まずボタンを追加してみます。
 
-メニューバー Insert -> Form Control -> Push Button
+### ボタン追加、関数わりあて手順
+
+1. メニューバー Insert -> Form Control -> Push Button
 でボタンを追加できるようになりますのでシートの適当なところで
 ドラッグしてボタンを追加してください。
 Push buttonがグレイアウトされていて選択できない場合は
 Tools -> Forms -> Design Mode でデザインモードに移行すると
 ボタンを追加できるようになります。
-
-ボタンを追加したら次はボタンを押したときに呼び出すプログラムを
+2. ボタンを追加したら次はボタンを押したときに呼び出すプログラムを
 指定します。
 ここでは上で使った
-my_first_macro_calc.pyが走るようにしてみます。
+hello.pyのhello_world()が走るようにしてみます。
 ボタン上で右クリックしてControl Propertiesを選択します
 （右クリックして何もおきない
 場合はTools -> Forms -> Design Modeでデザインモードに移行して
 ください）。
-
-GeneralタブのLabelでボタン上に表示される文字列を指定します。
-EventsタブのExecute actionの"..."をクリックしてpythonマクロを
+3. GeneralタブのLabelでボタン上に表示される文字列を指定します。
+4. EventsタブのExecute actionの"..."をクリックしてpythonマクロを
 割り当てます。Excute actionが反転表示されている状態で
-右側Macroを選択し、Libraryからmy_first_macro_calcを選択すると
-Macro Nameにmy_first_macro_calcが入ります。
-最初のmy_first_macro_calcはファイル名で、Macro Nameは
-そのファイル内にかかれている関数名です。ここで指定した関数名の
+右側[Macro...]を選択し、Libraryからhelloを選択すると
+Macro Nameにhello_worldが入ります。
+最初のhelloはファイル名で、Macro Nameは
+そのファイル内にかかれている関数名一覧です。ここで指定した関数名の
 関数がボタンを押すことで実行されます。
-OKを2回おして、Properties: Push ButtonボックスのXを押して
-Form Controlsのデザインモードボタンをクリックし、デザインモードを
-抜けます。
-Form ControlsボックスはXを押して閉じます。
+OKを2回おして、
+Execute actionが``hello.py$hello_world(user,Python)``になっているのを確認します。
+5. Properties: Push ButtonボックスのXを押します。
+6. このままではまだボタンのまわりにちいさな正方形が配置されていることから
+デザインモードになっていることがわかります。
+メニューバーTools →
+Design Mode (ここにチェックがはいっている)
+でデザインモードを抜けます。
+7. ボタンを押してA1セルに「PythonからCalcでHello World」という
+文字列が入るのを確認する。
 
-これでボタンを押すとA1セルに「PythonからCalcでHello World」という
-文字列が入力されるようになりました。
+### 追加説明
 
 入力された文字を消してもう一度ボタンを押して試すときには消したあと
 エンターを押すか、カーソルを他のセルに移動されてからボタンを押してください。
 
-一度ファイルとして保存して、もう一度読み込ませてみると
+メニューバー File→
+Save as
+で一度ファイルとして保存して、もう一度読み込ませてみると
 
 > This document contains macros.
 >
@@ -190,7 +197,7 @@ Tools -> Options -> LibreOffice -> Security -> Macro Security
 選択すればよいと思いますので各自どれを選択するか決めて設定してください。
 
 これであとは適宜
-``$HOME/.config/libreoffice/4/user/Scripts/python/my_first_macro_calc.py``
+``$HOME/.config/libreoffice/4/user/Scripts/python/hello.py``
 を編集して設置したボタンを押せば動作確認ができるようになりました。
 
 ## pythonプログラムをCalcファイルに同梱する
