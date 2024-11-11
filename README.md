@@ -1,5 +1,7 @@
 # LibreOfficeCalc Register設定用プログラム
 
+![img/calc-sample.png](img/calc-sample.png)
+
 LibreOfficeCalcを使ってレジスタを設定するためのデータを
 生成するプログラム。
 
