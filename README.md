@@ -285,3 +285,7 @@ Calcファイルを保存し、Calcを再起動させると修正後の動作が
 にあるファイルを埋め込もうとすると、「同名ファイルがあるが上書きするか」
 と聞いてきます。
 
+## セル set/get
+
+- [set-cell.py](set-cell.py)
+- [get-cell.py](get-cell.py)
