@@ -1,4 +1,4 @@
-# LibreOfficeCalc Register設定用プログラム
+`# LibreOfficeCalc Register設定用プログラム
 
 ![img/calc-sample.png](img/calc-sample.png)
 
@@ -286,6 +286,16 @@ Calcファイルを保存し、Calcを再起動させると修正後の動作が
 ``$HOME/.config/libreoffice/4/user/Scripts/python/``
 にあるファイルを埋め込もうとすると、「同名ファイルがあるが上書きするか」
 と聞いてきます。
+
+## エラーの報告
+
+```
+raise ValueError('bit length is not multiple of 8: bit length: %d' % (len(bits)))
+```
+
+のように例外を出すとエラーダイアログが出現します。他に画面一番下に
+メッセージを出すなどの方法もありますが、気づかない場合もありますので
+こちらの方法がよいと思います。
 
 ## セル set/get
 
