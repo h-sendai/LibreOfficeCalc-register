@@ -301,3 +301,20 @@ raise ValueError('bit length is not multiple of 8: bit length: %d' % (len(bits))
 
 - [set-cell.py](set-cell.py)
 - [get-cell.py](get-cell.py)
+
+## セルに入れられる値を制限(制約)
+
+セルがとる値を制限することができます。
+
+セルの値がbitであるとすると0か1のみ入力可にするのがよいと思います。
+
+1. セルを選択してメニューバーData -> Validityと進んで
+2. Criteriaタブで<br>
+   Allow: Whole Numbers を選択<br>
+           Allow empty cells (ここはチェックあり、なしは状況しだいか?)<br>
+    Data: valid range を選択<br>
+    Minimum: 0 を入力<br>
+    Maximum: 1 を入力<br>
+    するとそのセルは0, 1以外は入力不可になります。
+3.  Input HelpとError Alertでそれぞれの状況ででるメッセージを指定でき
+    ます。例: Error Alert: allows 0 or 1 only
