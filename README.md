@@ -62,6 +62,20 @@ Tools -> Options -> LibreOffice -> Security -> [Macro Security ...] ボタン
 次回からマクロを含んだファイルを開くとマクロを有効にするかどうかの
 ダイアログがでるので有効にするを選んでください。
 
+### オプションの設定
+
+デフォルトではセル内に / (slash) をいれ続けて文字を入力すると
+/ (slash)が消え、それに続く文字列がイタリックで表示されます。
+たとえば /home/you/data.txtと入力するとhome/you/data.txtがイタリックで
+表示される状態になります。これをやめるには
+
+メニューバー Tools →
+AutoCorrect Options →
+Optionsタブ →
+Automatic bold, italic strikeout and underlineからチェックをはずす
+
+とセットしておきます。
+
 ## Scriptの置き場所
 
 Calcファイルに上で走らせるpythonプログラムの保存場所は
