@@ -1,9 +1,9 @@
-`# LibreOfficeCalc Register設定用プログラム
+# LibreOfficeCalc Register設定用プログラム
 
 ![img/calc-sample.png](img/calc-sample.png)
 
-LibreOfficeCalcを使ってレジスタを設定するためのデータを
-生成するプログラム。
+LibreOfficeCalcを使ってレジスタ設定データを
+生成するプログラムための解説。
 
 AlmaLinux 8および9でテストしましたが、
 以下の理由でAlmaLinux 9での利用を推奨します。
