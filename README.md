@@ -336,3 +336,24 @@ raise ValueError('bit length is not multiple of 8: bit length: %d' % (len(bits))
     するとそのセルは0, 1以外は入力不可になります。
 3.  Input HelpとError Alertでそれぞれの状況ででるメッセージを指定でき
     ます。例: Error Alert: allows 0 or 1 only
+
+## スクリプト内の関数
+
+macroとしてなにが走るのかは関数名を指定する必要があります。
+関数なしのpythonスクリプト:
+```
+import uno
+
+print('hello')
+```
+と書いた場合には走る関数が指定できないので、macroとして走らせることは
+できません。
+
+```
+import uno
+
+def main():
+    print('hello')
+```
+
+のように最低ひとつの関数が必要になります。
