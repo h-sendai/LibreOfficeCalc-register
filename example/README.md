@@ -20,7 +20,10 @@ LibreOffice Calc上のビットデータからバイトにパックして
 
 ## 使いかた
 
-1. LibreOffice Calcをセットします。
+1. LibreOffice Calcをセットします。AlmaLinux 9ならrootユーザーで
+   ```
+   dnf install libreoffice-calc
+   ```
 2. 一度LibreOffice Calcを起動します。コマンドは``libreoffice --calc``です。
 3. マクロファイルの実行を許可するようにします。
    Tools -> Options -> LibreOffice -> Security -> [Macro Security ...] ボタン でSecurity LevelをMediumにセットしてください。
