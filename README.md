@@ -1,12 +1,14 @@
-# LibreOffice Calc pythonマクロ例題
+# LibreOffice Calcでビットをバイトに変換する
 
 ![example-registers.png](example-registers.png)
 
 LibreOffice Calc上のビットデータからバイトにパックして
-1行1バイトのファイルを作る例題マクロを作ってみました。
+1行1バイトのファイルを作るpythonマクロを作ってみました。
 
 - 例題LibreOffice Calcファイル [example0.ods](example0.ods)
 - Pythonマクロプログラムファイル [write-bytes-data.py](write-bytes-data.py)
+
+[pythonマクロを作る方法の解説](programming/)は別ページに書きました。
 
 ## 仕様
 
